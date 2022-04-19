@@ -10,3 +10,13 @@ html의 head에 link 를 써서 추가하는 방법과 css에 추가하는 방�
 이걸 없애는 기술? reset css
 
 다른 css파일을 참조시키는 역할로  쓰는 css파일도 존재한다. 
+
+* Border box
+
+css에 200px의 box를 요청하면 만들것이다. 
+그 box 에 padding 을 추가하면 css는 200px를 유지하려고 할것.
+padding값이 50px이면 box값은 150px
+200px를 유지하기위해 box를 크게 만듬
+
+box-sizing:border-box를 쓰는 이유?
+padding 을 주고 싶은데 box  사이즈는 그대로 있기를 원함

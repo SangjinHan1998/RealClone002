@@ -7,11 +7,11 @@ body {
     font-family: 'Quicksand', sans-serif;
 }
 
-ul {
+ul.MainLink {
     padding: 0;
 }
 
-li {
+li.github {
     display: inline-block;
 }
 

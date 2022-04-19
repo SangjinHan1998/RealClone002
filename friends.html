@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoCoaTalk Friends</title>
+</head>
+<body>
+    <div class = "status-bar">
+        <div class = "status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>    
+            <!--
+            아래의 script 에 의해 형성된다. 
+            저 script 를 지우면 이 코드의 효과도 사라짐
+            -->
+            <!--To do : wifi icon-->
+        </div>
+        <div class = "status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class = "status-bar__column">
+            <span>54%</span>
+            <i class="fa-solid fa-battery-half fa-2x"></i>
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <!--battery icon-->
+            <!--lightning icon-->
+        </div>
+    </div>
+
+    <!--nav>ul>li*(num, 원하는 갯수)>a(링크포함)
+    li 갯수를 줄여주는데 사용함.-->
+
+    <nav class = "nav">
+        <ul class = "nav__list">
+            <li class = "nav__btn">
+                <a class = "nav__link" href="friends.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
+                </a>
+            </li>
+            <li class = "nav__btn">
+                <a class = "nav__link" href="#">
+                <span class = "nav__notice">1</span>    
+                <i class="fa-solid fa-comment fa-2x"></i></a>
+            </li>
+            <li class = "nav__btn">
+                <a class = "nav__link" href="#"><i class="fa-solid fa-magnifying-glass fa-2x"></i></a>
+            </li>
+            <li class = "nav__btn">
+                <a class = "nav__link" href="#">
+                <span class = "nav__dot"></span>    
+                <i class="fa-solid fa-ellipsis fa-2x"></i></a>
+            </li>
+            <!--점 연속 3개 (ellipsis)-->
+        </ul>
+    </nav>
+
+    <script 
+        src="https://kit.fontawesome.com/0a3b45ccb2.js" 
+        crossorigin="anonymous">
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/*쉼표(,)로 중복된 코드를 겹치게 만들 수 있다. */
+
+.user-component,    
+.user-component__column:first-child {
+    display: flex;
+    align-items: center; 
+    /* flex 요소의 수직방향 정렬방식
+    center : 플렉스 컨테이너 가운데 배치 */
+}
+
+
+
+.user-component__avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 25px;
+    margin-right: 20px;
+}
+
+.user-componet__avatar--xl  {
+    width: 80px;
+    height: 80px;
+}
+
+.user-component__title {
+    font-weight: 600;
+    font-size: 23px;
+}
+
+.user-component__subtitle {
+    margin-top: 5px;
+    color: rgba(0,0,0,0.5);
+}

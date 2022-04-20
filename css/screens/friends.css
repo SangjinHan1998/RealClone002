@@ -1,0 +1,19 @@
+#friend-display-link    {
+    text-align: center;
+    display: block; 
+    /* display(표시, 나타냄) block(모든 인라인 요소 포함 가능. 
+    너비, 높이 padding(안쪽 여백), margin(바깥쪽 여백) 레이아웃 수정 */
+    background-color: #f1f3f5;
+    padding: 15px 0px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#friend-display-link i {
+    padding: var(--horizontal-space);
+    color: rgba(0,0,0,0.3);
+}
+
+.friends-screen {
+    padding:0px var(--horizontal-space);
+}

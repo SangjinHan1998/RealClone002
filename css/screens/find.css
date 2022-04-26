@@ -1,0 +1,134 @@
+.find-icons {
+    display: flex;
+    justify-content: space-between;
+    // 고정적인 border 값이 나옴.
+
+}
+
+.find-icons__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*  column : 다음 줄 row : 옆에 오는 것. 
+    Cross Axis 와 Main Axis 가 바뀜. 
+    Cross Axis -->세로  Main Axis --> 가로
+*/
+
+.find-icons__icon i {   
+    font-size: 36px;
+    color: #ffd700;
+}
+/* i(외부로 불러온 아이콘) css 설정. 이 코드는 find 부분 */
+
+
+.find-icons__icon span {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.recommended-friends {
+    margin: 25px 0;
+    padding: 25px 0px; 
+    border-top: var(--main-border); 
+    border-bottom: var(--main-border); 
+
+}
+
+.recommended-friends__title {
+    font-size: 15px;
+    color: rgba(0,0,0,0.4);
+}
+
+.recommended-friends span {
+    margin: 140px;
+    display:block;  // span 은 inline 이라 block 으로 바꿔준다. 
+    text-align: center;
+    font-size: 18px;
+    color: rgba(0,0,0,0.4);
+}
+
+.open-chat__header {
+    display: flex;
+    justify-content: space-between;
+    color: #363636;
+    margin-bottom: 25px;
+}
+
+.open-chat__header span {
+    opacity: 0.6;
+}
+
+.open-post {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.open-post__title {
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.open-post__hashtags    {
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-
+}
+
+.open-post__members {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;    // 가로축 기준 중앙정렬
+}
+
+.open-post__members img {   // 특정 html 코드 추가로 편집
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.open-post__members-count {
+    opacity:0.5;
+    font-size: 14px;
+}
+
+.open-post__members .divider {
+    width: 1px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.open-post__members-status {
+    color:#b21848;
+}
+
+.open-post__photo {
+    position: relative;
+}
+
+.open-post__photo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.open-post__heart-count {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    padding: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    position: absolute; 
+    bottom: 5px;
+    right: 5px;
+    font-size:14px;
+}
+/* absolute --> relative father 필요 */
+
+.open-post__heart-count span {
+    margin-left: 3px;
+}

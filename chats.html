@@ -47,26 +47,83 @@
     </header>
 
     <!--하나의 박스로 만듬-->
-    <main class = "chats-screen">   
+    <!--채팅창 1 시작 -->
+    <main class = "main-screen">   
         <div class = "user-component">
             <div class="user-component__column">
                 <img 
                     src = "https://avatars.githubusercontent.com/u/59711231?v=4" 
-                    class = "user-component__avatar user-componet__avatar" 
+                    class = "user-component__avatar" 
                 />
-            <div class = "user-component__text">
-                <h4 class = "user-component__title">Lithium3</h4>
-                <h6 class = "user-component__subtitle">Please Check My CoCoA Account Info</h6>
-            </div>
-        </div> 
+                <div class = "user-component__text">
+                    <h4 class = "user-component__title">Lithium3</h4>
+                    <h6 class = "user-component__subtitle">
+                        Please Check My CoCoA Account Info
+                    </h6>
+                </div>
+            </div> 
+        <div class = "user-component__column">
+            <span class = "user-component__time">21:22</span>
+            <div class = "badge">1</div>
+        </div>
+            
+        </div>
         
+       
+    </main>
+    <!--채팅창 끝-->
+
+    <!--채팅창 2 시작 -->
+    <main class = "main-screen">   
+        <div class = "user-component">
+            <div class="user-component__column">
+                <img 
+                    src = "image/wojak-nss-magazine-1.jpg" 
+                    class = "user-component__avatar" 
+                />
+                <div class = "user-component__text">
+                    <h4 class = "user-component__title">Wojak</h4>
+                    <h6 class = "user-component__subtitle">
+                        Wie wäre es mit McDonald's zum Mittagessen?
+                    </h6>
+                </div>
+            </div> 
+        <div class = "user-component__column">
+            <span class = "user-component__time">11:08</span>
+            <div class = "badge">3</div>
+        </div>
+            
+        </div>
+        
+       
+    </main>
+    <!--채팅창 끝-->
+
+    <!--채팅창 3 시작 -->
+    <main class = "main-screen">   
+        <div class = "user-component">
+            <div class="user-component__column">
+                <img 
+                    src = "image/miku.jpg" 
+                    class = "user-component__avatar" 
+                />
+                <div class = "user-component__text">
+                    <h4 class = "user-component__title">Hatsune Miku</h4>
+                    <h6 class = "user-component__subtitle">
+                        昨日宅配便を送ったことがありましたか？
+                    </h6>
+                </div>
+            </div> 
+        <div class = "user-component__column">
+            <span class = "user-component__time">07:07</span>
+            <div class = "badge">2</div>
+        </div>
             
         </div>
        
     </main>
-
+    <!--채팅창 끝-->
     
-
     <nav class = "nav">
         <ul class = "nav__list">
             <li class = "nav__btn">
@@ -76,7 +133,7 @@
             </li>
             <li class = "nav__btn">
                 <a class = "nav__link" href="chats.html">
-                <span class = "nav__notice">1</span>    
+                <span class = "nav__notice badge">5</span>    
                 <i class="fa-solid fa-comment fa-2x"></i>
                 </a>
             </li>

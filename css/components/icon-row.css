@@ -1,0 +1,26 @@
+.icon-row {
+    display: flex;
+    justify-content: space-between;
+    /* 고정적인 border 값이 나옴.*/
+
+}
+
+.icon-row__icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*  column : 다음 줄 row : 옆에 오는 것. 
+    Cross Axis 와 Main Axis 가 바뀜. 
+    Cross Axis -->세로  Main Axis --> 가로
+*/
+
+.icon-row__icon i {   
+    font-size: 36px;
+    color: #ffd700;
+}
+/* i(외부로 불러온 아이콘) css 설정. 이 코드는 find 부분 */
+
+.find-icons__icon span {
+    margin-top: 15px;
+}

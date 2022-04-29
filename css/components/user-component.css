@@ -5,7 +5,6 @@
     justify-content: space-between;   
     padding-top: 20px;  
     padding-bottom: 20px;
-    border-bottom: var(--main-border);
     /* justify-content 속성 : 플렉스 요소의 수평 방향 정렬 방식. 
     플렉스 요소는 요소들 사이에만 여유 공간을 두고 배치  */
 }
@@ -53,6 +52,11 @@
     color: rgba(0,0,0,0.5);
 }
 
+.user-component__subtitle {
+    margin-top: 5px;
+    color: #611226;
+}
+
 .user-component__column:last-child {
     color: rgba(0,0,0,0.8);
     display: flex;
@@ -63,4 +67,8 @@
 .user-component__time {
     margin-bottom: 10px;
     display: block;
+}
+
+.user-component__more {
+    
 }

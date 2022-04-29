@@ -1,7 +1,7 @@
 .find-icons {
     display: flex;
     justify-content: space-between;
-    // 고정적인 border 값이 나옴.
+    /* 고정적인 border 값이 나옴.*/
 
 }
 
@@ -42,7 +42,7 @@
 
 .recommended-friends span {
     margin: 140px;
-    display:block;  // span 은 inline 이라 block 으로 바꿔준다. 
+    display:block;  /*  span 은 inline 이라 block 으로 바꿔준다. */
     text-align: center;
     font-size: 18px;
     color: rgba(0,0,0,0.4);
@@ -63,6 +63,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 0px; 
+    border-bottom: 1px solid gray;
 }
 
 .open-post__title {
@@ -73,16 +75,15 @@
 .open-post__hashtags    {
     text-transform: uppercase;
     opacity: 0.6;
-    margin-
 }
 
 .open-post__members {
     margin-top: 10px;
     display: flex;
-    align-items: center;    // 가로축 기준 중앙정렬
+    align-items: center;    /* 가로축 기준 중앙정렬 */
 }
 
-.open-post__members img {   // 특정 html 코드 추가로 편집
+.open-post__members img {   /* 특정 html 코드 추가로 편집 */
     width: 20px;
     height: 20px;
     border-radius: 10px;

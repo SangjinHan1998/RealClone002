@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px 20px 20px 20px; /*일부로 간격 임의설정*/
+    padding: 20px; /*일부로 간격 임의설정*/
     margin-bottom: 15px;
 }
 

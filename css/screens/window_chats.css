@@ -1,6 +1,8 @@
+/* 영상에서는 chat.css */
+
 #chat-screen    {
     background-color: rgb(201, 241, 247);
-    height: 11000vh;
+    height: 500vh;
 }
 
 #chat-screen .alt-header,
@@ -22,8 +24,185 @@
 }
 
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(10px);    /*content move to + 10px*/
+        opactiy: 0;
+    }
+    
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 /*test code*/
 
 .main-chat {
-    margin-top: 100px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    align-items: center;
+    animation: fadeIn 0.5s linear;
+}
+
+.chat__timestamp {
+    color: white;
+    background-color: rgb(192, 188, 182);
+    padding: 16px;
+    border-radius: 25px;
+    margin-bottom: 25px;
+}
+
+.message-row {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.message-row img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+
+.message-author {
+    
+    margin-bottom: 5px;
+    display: block;
+}
+
+.message__info  {
+    display: flex;
+    align-items: flex-end;
+}
+
+.message__bubble {
+    background-color: whitesmoke;
+    padding: 13px;
+    border-radius: 18px;
+    border-top-left-radius: 0px;
+    margin-right: 5px;
+}
+
+.message__time,
+.message-author  {
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.message-row--own   {
+    justify-content: flex-end;
+    /* justify-content -- > horizontal */
+}
+
+.message-row--own .message__bubble  {
+    background-color: var(--skyblue);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 15px;
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+/* 코드가 복잡해진다. 
+
+.message-row--own .message__bubble  {
+    order: 1;
+}
+
+/*order --> only adapt in flex children */
+
+/*
+.message-row--own .message__time {
+    order: 0;
+}
+
+*/
+
+.message-row--own .message__info {
+    flex-direction: row-reverse;
+}
+
+.reply {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 25px;
+    box-sizing: border-box; 
+    /* box-sizing 
+    박스의 크기를 어떤것을 기준으로 계산할 것인가? 
+    Based on What size will the size of the box be calculated?? 
+    */
+    align-items: center;
+}
+
+.reply .reply__column:first-child{
+    width: 10%;
+}
+
+.reply .reply__column:last-child{
+    width: 90%;
+    position: relative;
+}
+
+.reply i {
+    opacity: 0.5;
+}
+
+
+.reply input {
+    padding: 10px;
+    height: 30px;
+    width: 100%;
+    border: var(--main-border);
+    border-radius: 20px;
+}
+
+.reply__column:last-child > i,
+.reply__column:last-child button {
+    position: absolute;
+    right: -3px;
+    top: 2px;
+}
+
+.reply__column:last-child > i {
+    right: 40px;
+    top: 10px;
+}
+
+.reply__column button {
+    background-color: yellow;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.reply__column button i {
+    opacity: 1;
+}
+
+.reply__column button:focus,
+.reply__column button:active   {
+    outline: none;
+}
+
+.reply:focus-within .reply__column:first-child{
+    opacity: 0;
+
+    /*
+    display: none;
+    visibility: hidden; 
+    cam be replaced by a square.
+    */
+}
+
+.reply:focus-within .fa-face-grin,
+.reply:focus-within button {
+    opacity: 0;
 }

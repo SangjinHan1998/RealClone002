@@ -26,10 +26,34 @@
 
 }
 
-
 .friends-screen__channel-header {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
     color: rgba(0,0,0,0.5);
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 3;
+    }
+    to {
+        opacity: 2;
+        visibility: hidden; /*slip out of a mouse*/
+    }
+}
+
+#splash-screen  {
+    background-color: #f9e000;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    animation: hideSplashScreen 0.3s ease-in-out forwards;  
+    /* forwards --> remember keyframes */
+    animation-delay: 2s;
 }

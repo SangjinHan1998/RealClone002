@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>window_chats-CoCoaTalk </title>
+    <!--chat.html in video-->
 </head>
 <body id ="chat-screen">
     <!--상단 상태바 -->
@@ -58,7 +59,59 @@
         <div class = "chat__timestamp">
             Tuesday, April 29, 2022
         </div>
+        <!-- chat 1-->
+        <div class = "message-row">
+            <img src = "image/victory.jfif">
+            <div class = "message-row__content">
+                <span class = "message-author">Victory Han</span>
+                <div class = "message__info">
+                    <span class = "message__bubble">jfif : 구성 요소 샘플 등록, 해상도, 종횡비 및 색 공간이 포함</span>
+                    <span class = "message__time">12:55</span>
+                </div>
+            </div>
+        </div>
+        <!-- chat 1 end-->
+
+        <!-- chat 2-->
+        <div class = "message-row message-row--own">
+            <div class = "message-row__content">
+                <div class = "message__info">   <!-- change each position -->
+                    <span class = "message__bubble">Thanks for your Info</span>
+                    <span class = "message__time">13:05</span>
+                </div>
+            </div>
+        </div>
+        <!-- chat 2 end-->
+
+        <!-- chat 3-->
+        <div class = "message-row">
+            <img src = "image/victory.jfif">
+            <div class = "message-row__content">
+                <span class = "message-author">Victory Han</span>
+                <div class = "message__info">
+                    <span class = "message__bubble">I hope you will be happier.</span>
+                    <span class = "message__time">13:19</span>
+                </div>
+            </div>
+        </div>
+        <!-- chat 1 end-->        
     </main>
+
+    <!--keyboard input spot-->
+    <form class = "reply__column">
+        <div class="reply__column">
+            <i class="fa-regular fa-square-plus fa-lg"></i>
+        </div>
+        <div class="reply__column">
+            <input type = "text" placeholder="Write a comment"/>
+            <i class="fa-regular fa-face-grin"></i>
+            <button>
+                <i class="fa-solid fa-arrow-up"></i>        
+            </button>
+        </div>
+    </form>
+    <!--keyboard end -->
+
    
 
 

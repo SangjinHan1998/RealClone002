@@ -26,8 +26,8 @@
 
 @keyframes fadeIn {
     from {
-        transform: translateY(10px);    /*content move to + 10px*/
-        opactiy: 0;
+        transform: translateY(-10px);    /*content move to + 10px*/
+        opacity: 0;
     }
     
     to {
@@ -46,6 +46,8 @@
     align-items: center;
     animation: fadeIn 0.5s linear;
 }
+
+
 
 .chat__timestamp {
     color: white;
@@ -139,6 +141,7 @@
     Based on What size will the size of the box be calculated?? 
     */
     align-items: center;
+    transition: all .3s ease-in-out;
 }
 
 .reply .reply__column:first-child{
@@ -158,9 +161,11 @@
 .reply input {
     padding: 10px;
     height: 30px;
-    width: 100%;
+    width: 99%;
     border: var(--main-border);
     border-radius: 20px;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
 }
 
 .reply__column:last-child > i,
@@ -192,17 +197,35 @@
     outline: none;
 }
 
+ /*
 .reply:focus-within .reply__column:first-child{
     opacity: 0;
-
-    /*
+    visibility: hidden;
+   
     display: none;
     visibility: hidden; 
     cam be replaced by a square.
-    */
+   
+}
+*/
+
+.reply .reply__column:first-child,
+.reply .fa-face-grin,
+.reply button   {
+    transition: opacity 0.3s ease-in-out;
 }
 
+.reply:focus-within .reply__column:first-child,
 .reply:focus-within .fa-face-grin,
 .reply:focus-within button {
     opacity: 0;
+}
+
+.reply:focus-within input {
+    width: 98vw;
+    transform:translate(-12%) translateY(-80px);
+}
+
+.reply:focus-within {
+    transform: translateY(80px);
 }

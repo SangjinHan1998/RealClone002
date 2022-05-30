@@ -4,6 +4,7 @@
 
 @import "reset.css";
 @import "variables.css";
+
 /* Components */
 @import "components/status-bar.css";
 @import "components/nav-bar.css";
@@ -12,6 +13,7 @@
 @import "components/user-component.css";
 @import "components/badge.css";
 @import "components/icon-row.css";
+@import "components/no-mobile.css";
 
 
 /* Screens */
